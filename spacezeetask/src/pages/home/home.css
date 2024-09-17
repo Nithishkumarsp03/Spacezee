@@ -1,0 +1,135 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.home-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Hamburger menu - Initially hidden */
+.hamburger-menu {
+  display: none;
+  /* font-size: 25px; */
+  cursor: pointer;
+  padding: 10px;
+  background-color: #edf3f7;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.side-bar {
+  height: 100vh; /* Full viewport height */
+  width: 330px;
+  font-size: 15px;
+  background-color: #edf3f7;
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+  transform: translateX(0); /* Start with sidebar visible */
+  overflow-y: auto; /* Sidebar can scroll if content overflows */
+}
+
+/* Sidebar content */
+.side-bar h4 {
+  border: 1px solid rgb(149, 187, 252);
+  padding: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.side-bar h4:hover {
+  background-color: rgb(16, 120, 177);
+  color: white;
+  transform: scale(1.02);
+}
+
+.side-bar h4 i {
+  margin-right: 10px;
+}
+
+/* Dashboard content */
+.dashboard-content {
+  flex: 1; /* Take up remaining space */
+  padding: 0;
+  overflow-y: auto; /* Make the Dashboard content scrollable */
+  background-color: #f9f9f9;
+  transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transition when sidebar toggles */
+  /* height: 100%; */
+}
+
+  .footer{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid black;  */
+    
+  }
+  .footer1{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+    background-color: rgb(131, 180, 249);
+  }
+  .footer2{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(70, 147, 255);
+  }
+
+/* Hide sidebar and show hamburger on smaller screens */
+@media (max-width: 1000px) {
+  .side-bar {
+    transform: translateX(-330px); /* Hide off-screen initially */
+    width: 15px;
+    overflow: hidden;
+  }
+
+  .side-bar.active {
+    transform: translateX(0); /* Show sidebar when hamburger is clicked */
+    width: 330px;
+    z-index: 100;
+  }
+
+  .dashboard-content {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  /* Hide dashboard content when the sidebar is active */
+  .dashboard-content.hidden {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on small screens */
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .hamburger-menu::-webkit-scrollbar{
+    display: none;
+  }
+
+  .dashboard-content {
+    margin-left: 0; /* Remove margin when the sidebar is hidden */
+    width: 100vw; /* Full width when sidebar is hidden */
+  }
+}
+
+/* Show sidebar on larger screens */
+@media (min-width: 1001px) {
+  .side-bar {
+    transform: translateX(0); /* Always show sidebar on larger screens */
+  }
+
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu on larger screens */
+  }
+
+  .dashboard-content {
+    width: calc(100% - 330px); /* Adjust width to accommodate the sidebar */
+  }
+}

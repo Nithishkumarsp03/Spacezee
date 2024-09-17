@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    font-family: "Playfair Display", serif;
+    border: 1px solid rgb(217, 216, 216);
+    width: 78.5vw;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.heading>p{
+    margin-left: 20px;
+}
+
+.subheading{
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 132, 255);
+    margin: 10px;
+    font-size: 20px;
+}
+
+.subheading>p{
+    margin-left: 20px;
+}
+
+.contents > div:first-child{
+    border-top: 3px solid rgb(0, 132, 255);
+    display: flex;
+    font-size: 13px;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.contents{
+    background-color: #EDF3F7;
+    margin: 20px;
+    position: relative;
+}
+
+.sub-headings{
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 3px;
+    font-family: "Playfair Display", serif;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.custom-table {
+    width: 98%;           /* Make the table take the full available width */
+    table-layout: fixed;    /* Ensures that cells take equal space */
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid rgb(193, 191, 191);
+  }
+  
+  .custom-table td {
+    padding: 10px;
+    width: 50%;            /* Ensures equal width for both columns */
+    word-wrap: break-word;  /* Ensures long text breaks into new lines */
+  }  
+
+  .table{
+    border: 1px solid rgb(193, 191, 191);
+    width: 98%;
+    table-layout: fixed;    /* Ensures that cells take equal space */
+    border-collapse: collapse;
+    /* text-align: center; */
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  .table td {
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
+  .left-side-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 94%;
+  }
+
+  .left-side-container>button{
+    cursor: pointer;
+  }
+  
+
+@media (max-width: 1000px) {
+    .heading {
+        width: 100vw;
+    }
+
+    .heading>p{
+        margin-left: -3px;
+    }
+
+    .subheading>p{
+        margin-left: -3px;
+    }
+
+    .table, .custom-table{
+        width: 95%;
+    }
+
+    .contents{
+        margin: -5px;
+    }
+
+    .left-side-container{
+        margin-left: 80%;
+      }
+}
