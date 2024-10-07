@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Applayout{
+    background-image: url('../assets/Bg.jpg');
+    overflow-y: scroll;
+
+    /* scrollbar-width: none; */
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-header
+{
+    height: 10%;
+    width: 100%;
+}
+
+.main-body
+{
+    height: 90%;
+    width: 100%;
+}

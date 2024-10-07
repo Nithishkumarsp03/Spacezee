@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-header {
+  width: 100%;
+}
+
+.nav-bar {
+  font-weight: 600;
+  color: #2d537c;
+  background-color: #c8cff6;
+  width: 100%;
+  height: 7%;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  padding: 0.7%;
+  margin-left: 2%;
+  width: 100%;
+  position: relative;
+}
+
+.nav-bar ul li{
+  cursor: pointer;
+}
+
+.with-arrow {
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+/* Initially hide the dropdown, but keep it in the flow with opacity and visibility */
+.drop-down {
+  min-width: 220px; /* Adjust dropdown width to accommodate text */
+  display: block;
+  position: absolute;
+  top: 150%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Style for the dropdown content */
+.drop-down ul {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black;  */
+  justify-content: center;
+  text-align: left; /* Align text to the left */
+  background-color: white;
+  padding: 0; /* Remove any extra padding */
+}
+
+.drop-down ul li {
+  padding: 10px 15px; /* Proper padding for text alignment */
+  font-size: 14px; /* Adjust font size */
+  width: 100%; /* Ensure li takes full width of dropdown */
+  box-sizing: border-box; /* Include padding in width */
+  text-align: left; /* Align the text inside li elements */
+  cursor: pointer;
+}
+
+.drop-down ul li:hover{
+  color: #85b0c3;
+}
+
+/* On hover, show the dropdown smoothly */
+.with-arrow:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-home{
+  width: 100%;
+  height: 90%;
+}
+
+.main-home-body{
+  width: 100%;
+  height: 75%;
+  background-color: white;
+  display: flex;
+}
+
+.home-photo{
+  width: 74%;
+  height: 100%;
+}
+
+.home-content{
+  width: 26%;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.home-photo-img{
+  width: 100%;
+  height: 78%;
+  overflow: hidden;
+}
+
+.home-photo-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.home-content-header{
+  font-weight: 500;
+  font-size: 22px;
+  width: 45%;
+  text-align: center;
+}
+
+.flex-box{
+  width: 100%;
+  height: 50%;
+  margin-top: 3%;
+  padding-left: 2%;
+}
+
+.home-content-flex-box{
+  display: flex;
+  height: 33.5%;
+  width: 100%;
+  padding: 1%;
+  padding-left: 0;
+}
+
+.date{
+  width: 12%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.notes {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 5%;
+  height: 100%; /* Ensure the container takes full height for vertical centering */
+}
+
+
+.notes li {
+  width: 70%;
+  color: #3498db;
+  font-size: 12px;
+  list-style-position: inside;
+  text-align: left; /* Align text and bullet point together */
+}
+
+.bottom-content{
+  width: 99%;
+  height: 12%;
+  align-content: center;
+  line-height: 23px;
+  font-size: 13px;
+  padding: 5px;
+  border: 1px solid rgb(173, 173, 173);
+  background-color: #fbf8f8;
+  border-radius: 10px;
+}
