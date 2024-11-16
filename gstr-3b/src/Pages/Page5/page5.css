@@ -1,0 +1,19 @@
+.page5-table{
+    width: 100%;
+    height: 28rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.page5-table-tag{
+    /* background-color: black; */
+    height: 75%;
+    width: 96.6%;
+    border-collapse: collapse;
+}
+
+.page5-table-tag th,td{
+    border: 1px solid #dddddd;
+    padding: 10px;
+}

@@ -1,0 +1,307 @@
+.page1-content{
+    height: 75%;
+    width: 100%;
+    background-color: #e4e8eb;
+    /* background-color: red; */
+    display: flex;  
+    /* flex-direction: column; */
+    justify-content: center;
+    overflow: hidden;
+    overflow: auto;
+}
+
+.page1-content-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page1-content-div{
+    width: 75%;
+    height: 100%;
+    
+}
+
+.page1-navigation{
+    display: flex;
+    padding: 0.9%;
+    padding-bottom: 0;
+    gap: 1%;
+}
+
+.page1-navigation p{
+    margin-right: -5px;
+}
+
+.page1-navigation p:nth-child(1){
+    color: #2c4e86;
+}
+
+.page1-navigation p:nth-child(3){
+    color: #2c4e86;
+}
+
+.page1-content-body-header{
+    /* background-color: red; */
+}
+
+.page1-content-body-header p{
+    padding: 0.9%;
+    font-size: 20px;
+}
+
+.page1-content-body-right{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    color: #2c4e86;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.page1-content-body-right p{
+    padding-left: auto;
+    padding-right: 0;
+}
+
+.page1-content-body-card1{
+    background-color: white;
+    width: 100%;
+    height: 17%;
+    margin: 0.9%;
+    
+}
+
+.page1-content-body-card1>div{
+    height: 100%;
+    width: 65%;
+    /* background-color: green; */
+    margin-top: 0;
+    justify-content: space-around;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: 2;
+}
+
+.first3
+{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.first6
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.page1-content-body-card2{
+    background-color: white;
+    width: 100%;
+    height: 65.5%;
+    margin: 0.9%;
+    display: flex;
+    gap: 4%;
+}
+
+.page1-content-footer{
+    background-color: #14315d;
+    height: 50%;
+    width: 100%;
+}
+
+.card2-outside-div{
+    border: 1px solid #dddddd;
+    width: 77%;
+    height: 45%;
+    align-items: center;
+    margin: 5%;
+    margin-right: 0;
+}
+
+.card2-outside-div-div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.card2-outside-div-div2{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    gap: 10px;
+}
+
+.card2-outside-div-buttons{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+}
+
+.card2-outside-div-buttons>div{
+    border: 1px solid black;
+    padding: 7px;
+    /* width: 11%; */
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    
+}
+
+.back:hover{
+    background-color: #dddddd;
+}
+
+.button-page2-red:hover{
+    background-color: rgba(255, 0, 0, 0.758);
+}
+
+.card2-div1{
+    height: 100%;
+    align-content: center;
+    width: 80%;
+    padding-left: 1%;
+    border-right: 1px solid #dddddd;
+}
+
+.card2-div2{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    gap: 8%;
+    width: 20%;
+    justify-content: center;
+}
+
+.card2-outside-div2{
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.page2-content-body-card2{
+    width: 100%;
+    height: 24%;
+    background-color: white;
+    margin: 0.9%;
+    margin-top: 1.5%;
+    text-align: center;
+    padding: 1.5%;
+}
+
+.page2-content-body-card2 p:nth-child(1){
+    font-size: 19px;
+}
+
+.page2-content-body-card2 p:nth-child(2){
+    font-size: 15px;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+.summary-status{
+    width: 100%;
+    display: flex;
+    margin: 0.9%;
+    font-size: 15px;
+    
+}
+
+.summary-status p a{
+    text-decoration: none;
+}
+
+.summary-status p:nth-child(2){
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 12px;
+}
+
+.tax-card {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0.9%;
+    gap: 5%;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+
+.tax-inner-card {
+    background-color: white;
+    height: 47%;
+    width: 30%; 
+}
+
+.tax-card-header{
+    background-color: #14385d;
+    width: 100%;
+    height: 35%;
+}
+
+.tax-card-header p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-align: center; */
+    padding: 5%;
+}
+
+.tax-card-body{
+    height: 65%;
+    width: 100%;
+    padding: 20px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically (center them) */
+    margin-bottom: 10px; /* Space between rows */
+  }
+  
+  .flex-box p {
+    margin: 0; /* Remove default margin */
+    margin-right: 4%;
+    font-size: 16px; /* Set consistent font size */
+  }
+
+.important-message{
+    height: 43%;
+    width: 100%;
+    background-color: white;
+    margin: 0.9%;
+    border: 1px solid #337ab7;
+}
+
+.important-header{
+   background-color: #337ab7;
+   width: 100%;
+   height: 20%;
+}
+
+.important-header{
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: 500;
+}
+
+.important-body{
+    padding: 2%;
+}
+
+.important-body ul{
+    padding: 1%;
+    padding-left: 3%;
+}

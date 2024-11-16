@@ -1,0 +1,56 @@
+.page-9-container{
+    background-color: white;
+    height: 100%;
+}
+
+.reason-box{
+    background-color: #e4e8eb;
+    /* background-color: red; */
+    margin: 20px;
+    margin-top: 0;
+    padding: 10px 17px;
+    font-size: 14px;
+}
+
+.table-page9{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 20px;
+    margin-top: 0; */
+    overflow: hidden;
+}
+
+.table-page9 table{
+    width: 96%;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.table-page9 table tr th{
+    padding: 14px;
+    border: 1px solid #dddddd;
+    text-align: start;
+}
+
+.payment-details {
+    width: 18%;
+    margin: 20px 20px;
+    background-color: #e4e8eb;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 6%;
+}
+
+.payment-details p {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center the items vertically */
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px;
+    margin: 0; /* Remove any default margin */
+    gap: 8px; /* Add spacing between the icon and text */
+}
+
+.payment-details p:nth-child(2), .payment-details p:nth-child(3){
+    color: grey;
+}

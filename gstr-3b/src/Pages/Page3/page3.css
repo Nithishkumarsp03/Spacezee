@@ -1,0 +1,145 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Ensure full-page scroll */
+html,
+body {
+  height: 100%; /* Full height for the page */
+  background-color: #e4e8eb; /* Set background color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Page body section */
+.page3-body {
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  width: 100%;
+  background-color: #e4e8eb; /* Apply background color */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Page content container */
+.page3-content {
+  width: 75%; /* Restrict width */
+  margin: 0 auto; /* Center content */
+}
+
+/* Section with table or content */
+.paymentoftax {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling for large tables */
+  background-color: white;
+  margin: 10px;
+}
+
+.paymentoftax-header {
+  display: flex;
+  width: 100%;
+  background-color: #17c4bb;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.paymentoftaxheader-left {
+  font-weight: 500;
+}
+
+.paymentoftaxheader-right {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+  color: #316eb3;
+}
+
+.paymentoftax-subheader {
+  background-color: #d9edf7;
+  margin: 20px;
+  padding: 20px;
+  font-size: 15px;
+  color: #31708f;
+}
+
+.paymentoftax-body {
+  margin: 20px;
+}
+
+.paymentoftax-card1 {
+  background-color: #d9edf7;
+  width: 100%;
+  height: 20%;
+  color: #31708f;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.table-header {
+  background-color: #f4f4f6;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+  /* width: auto; */
+}
+
+.table-data {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table {
+  table-layout: fixed; /* Force columns to respect defined widths */
+}
+
+.page3-card2-outside-div-buttons-1 {
+  margin-top: auto;
+  margin-bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 10px;
+}
+
+.page3-card2-outside-div-buttons-1>div{
+    /* border: 1px solid black; */
+    padding: 7px;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    background-color: #316eb3;
+    color: white;
+    margin-top: 3%;
+}
+
+.page3-card2-outside-div-buttons-2 {
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+  }
+
+  .page3-card2-outside-div-buttons-2>div{
+    /* border: 1px solid black; */
+    padding: 7px;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    background-color: #31528f9d;
+    color: white;
+    margin-top: 3%;
+}
+
+.page3-footer{
+    width: 100%;
+    height: 400px;
+    background-color: #14315d;
+}
