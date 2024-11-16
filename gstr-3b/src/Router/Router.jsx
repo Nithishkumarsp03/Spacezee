@@ -12,6 +12,7 @@ import Page8 from '../Pages/Page8/Page8'
 import Page9 from '../Pages/Page9/Page9'
 import Page10 from '../Pages/Page10/Page10'
 import Page11 from '../Pages/Page11/Page11'
+import Error from '../Components/404/Error'
 import '../Styles/router.css'
 
 export default function Routers() {
@@ -30,6 +31,7 @@ export default function Routers() {
               <Route path='/page9' element={<Page9/>}/>
               <Route path='/page10' element={<Page10/>}/>
               <Route path='/page11' element={<Page11/>}/>
+              <Route path='*' element={<Error />}/>
             </Routes>
           </Router>
         </div>
