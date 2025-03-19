@@ -1,0 +1,28 @@
+.mandatory-field-indicator{
+    margin-top: 3%;
+}
+
+.mandatory-field-indicator{
+    display: flex;
+    justify-content: end;
+    padding-right: 4%;
+    font-size: 14px;
+}
+
+.add-record-input-boxes{
+    display: flex;
+    width: 100%;
+    padding: 10px 4%;
+    gap: 15px;
+}
+
+.add-record-input-boxes div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.rate-select-input{
+    /* width: 20px; */
+}

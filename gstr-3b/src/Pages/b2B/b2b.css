@@ -1,0 +1,21 @@
+.b2b-shadow-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recepient-wise-count{
+    color: #0b1e59;
+    font-size: 14px;
+    margin-left: 10px;
+    border-bottom: 2px solid #0b1e59;
+    width:  fit-content;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+}
+
+.recepient-wise-count:hover{
+    border: none;
+    cursor: pointer;
+}

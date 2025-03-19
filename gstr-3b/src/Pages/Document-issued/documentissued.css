@@ -1,0 +1,22 @@
+.document-issued-body{
+    margin: 40px;
+}
+
+.table-content-header{
+    color: #0b1e59;
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.document-issued-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.document-issued-table tr th{
+    border: 1px solid #c0c4cc;
+    padding: 7px;
+    background-color: #f4f4f6;
+    text-align: center;
+}

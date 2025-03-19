@@ -12,6 +12,14 @@ import Page8 from '../Pages/Page8/Page8'
 import Page9 from '../Pages/Page9/Page9'
 import Page10 from '../Pages/Page10/Page10'
 import Page11 from '../Pages/Page11/Page11'
+import Addrecord from '../Pages/Addrecord/Addrecord'
+import B2b from '../Pages/b2B/B2b'
+import B2bc from '../Pages/b2b-others/B2bc'
+import Dashboard from '../Pages/Dash/Dashboard'
+import Documentissued from '../Pages/Document-issued/Documentissued'
+import Gstr1 from '../Pages/gstr1-filling/Gstr1'
+import Summary from '../Pages/gstsummary/Summary'
+import Mainpage from '../Pages/mainpage/Mainpage'
 import Error from '../Components/404/Error'
 import '../Styles/router.css'
 
@@ -31,6 +39,14 @@ export default function Routers() {
               <Route path='/page9' element={<Page9/>}/>
               <Route path='/page10' element={<Page10/>}/>
               <Route path='/page11' element={<Page11/>}/>
+              <Route path='/add-record' element={<Addrecord/>}/>
+              <Route path='/b2b' element={<B2b />}/>
+              <Route path='/b2bc-others' element={<B2bc />}/>
+              <Route path='/dashboard' element={<Dashboard />}/>
+              <Route path='/document-issued' element={<Documentissued />}/>
+              <Route path='/gstr1-filling' element={<Gstr1 />}/>
+              <Route path='/gstr-summary' element={<Summary />}/>
+              <Route path='/mainpage' element={<Mainpage />}/>
               <Route path='*' element={<Error />}/>
             </Routes>
           </Router>
