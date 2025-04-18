@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SelectBox = ({ defaultValue, options = [] }) => {
+const SelectBox = ({ defaultValue, options = [], disabled }) => {
   const [value, setValue] = useState(defaultValue || "");
 
   return (
@@ -15,6 +15,7 @@ const SelectBox = ({ defaultValue, options = [] }) => {
         backgroundColor: "#ffffff",
         borderRadius: "4px",
       }}
+      disabled={true}
       onFocus={(e) => (e.target.style.border = "1px solid lightblue")}
       onBlur={(e) => (e.target.style.border = "1px solid #dddddd")}
     >

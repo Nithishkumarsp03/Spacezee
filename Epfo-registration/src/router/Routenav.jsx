@@ -8,6 +8,7 @@ import Page6 from "../pages/Page6/Page6";
 import Page7 from "../pages/page7/Page7";
 import Page8 from "../pages/Page8/Page8";
 import Page9 from "../pages/Page9/Page9";
+import Page10 from "../pages/Page10/Page10";
 
 export default function Routenav() {
   return (
@@ -21,6 +22,7 @@ export default function Routenav() {
           <Route path="/page7" element={<Page7 />} />
           <Route path="/page8" element={<Page8 />} />
           <Route path="/page9" element={<Page9 />} />
+          <Route path="/page10" element={<Page10 />} />
         </Routes>
     </div>
   );
